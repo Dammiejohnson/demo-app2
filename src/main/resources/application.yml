@@ -1,0 +1,17 @@
+app:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    jdbc-url: jdbc:postgresql://localhost:5432/demodb
+    username: postgres
+    password: password
+    pool-size: 30
+
+server:
+  port: 8081
+
+spring:
+  flyway:
+    url: jdbc:postgresql://localhost:5432/demodb
+    schemas: USERSERVICE
+    user: "postgres"
+    password: "password"
